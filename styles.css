@@ -1,0 +1,96 @@
+body {
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d; /* Dark background */
+    color: #00ff00; /* Neon green text */
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1a1a1a; /* Slightly lighter background for container */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.2); /* Neon glow effect */
+}
+
+h1 {
+    text-align: center;
+    color: #00ff00;
+    text-shadow: 0 0 5px #00ff00; /* Glowing text effect */
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #00ff00; /* Green label text */
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: #000000; /* Dark background for input */
+    color: #00ff00; /* Green text in input field */
+    border: 1px solid #00ff00; /* Green border */
+    border-radius: 4px;
+}
+
+input[type="text"]::placeholder {
+    color: #008000; /* Darker green for placeholder text */
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #004d00; /* Dark green button */
+    color: #00ff00; /* Green button text */
+    border: 1px solid #00ff00; /* Green border */
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); /* Glow on button */
+}
+
+button:hover {
+    background-color: #00cc00; /* Lighter green on hover */
+}
+
+.output {
+    display: none;
+    margin-top: 20px;
+    animation: fadeIn 0.5s ease;
+    color: #00ff00;
+}
+
+.result {
+    margin-bottom: 5px;
+    color: #00ff00;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    input[type="text"],
+    button {
+        width: 100%;
+    }
+}
